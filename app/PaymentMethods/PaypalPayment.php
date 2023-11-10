@@ -2,10 +2,11 @@
 
 namespace App\PaymentMethods;
 
-class PaypalPayment
+
+class PaypalPayment extends AbstractPayment
 {
-    public function processPayment()
+    public function processPayment(float $amount): string
     {
-        return "Paypal payment done";
+        return "Paypal transection done";
     }
 }
