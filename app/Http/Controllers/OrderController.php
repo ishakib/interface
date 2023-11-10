@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
-
     protected $paymentMethodResolver;
 
     public function __construct(PaymentMethodResolver $paymentMethodResolver)
